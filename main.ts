@@ -17,6 +17,6 @@ namespace PxSwitch {
         let pin = Nezha.digitalPin(RJPORT, RJLine.LA)
         pins.setPull(pin, PinPullMode.PullUp)
         let sensor = pins.digitalReadPin(pin)
-        return (sensor ? Switch.Pressed : Switch.Released)
+        return (sensor ? Switch.Released : Switch.Pressed)
     }
 }
